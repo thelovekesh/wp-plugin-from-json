@@ -1,0 +1,42 @@
+<?php
+/**
+ * {{Plugin Name}}
+ *
+ * @package           {{plugin-package}}
+ * @author            {{Author Name}}
+ * @copyright         2019 {{Author Name}}
+ * @license           {{License}}
+ *
+ * @wordpress-plugin
+ * Plugin Name:       {{Plugin Name}}
+ * Plugin URI:        {{Plugin URI}}
+ * Description:       {{Description}}
+ * Version:           {{Version}}
+ * Requires at least: {{Requires at least}}
+ * Requires PHP:      {{Requires PHP}}
+ * Author:            {{Author Name}}
+ * Author URI:        {{Author URI}}
+ * Text Domain:       {{Text Domain}}
+ * License:           {{License}}
+ * License URI:       {{License URI}}
+ * Update URI:        {{Update URI}}
+ */
+
+define( '{{PROJECT_NAME}}_FEATURES_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
+define( '{{PROJECT_NAME}}_FEATURES_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
+
+// phpcs:disable WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
+require_once {{PROJECT_NAME}}_FEATURES_PATH . '/inc/helpers/autoloader.php';
+require_once {{PROJECT_NAME}}_FEATURES_PATH . '/inc/helpers/custom-functions.php';
+// phpcs:enable WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
+
+/**
+ * To load plugin manifest class.
+ *
+ * @return void
+ */
+function {{project_name}}_features_plugin_loader() {
+	\{{Project_Name}}\Features\Inc\Plugin::get_instance();
+}
+
+{{project_name}}_features_plugin_loader();

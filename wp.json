@@ -1,0 +1,21 @@
+{
+	"name": "My New plugin",
+	"pluginDirName": "my-plugin",
+	"pluginPath": "..",
+	"pluginMainFile": "my-plugin.php",
+	"pluginPackage": "MyPlugin",
+	"pluginHeaderFields": {
+		"Plugin Name": "My New plugin",
+		"Plugin URI": "http://www.example.com/",
+		"Description": "My New plugin is a new plugin for WordPress",
+		"Version": "1.0.0",
+		"Requires at least": "3.0.0",
+		"Requires PHP": "5.2.4",
+		"Author Name": "My Name",
+		"Author URI": "http://www.example.com/",
+		"Text Domain": "my-plugin",
+		"License": "GPLv2",
+		"License URI": "http://www.gnu.org/licenses/gpl-2.0.html",
+		"Update URI": "http://www.example.com/update/"
+	}
+}
